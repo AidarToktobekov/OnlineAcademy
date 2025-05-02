@@ -30,17 +30,17 @@ const LoginForm: FC<Props> = (
     <>
       <Grid component={"form"} onSubmit={submitFormHandler}>
         <Grid container flexDirection={'column'} gap={1}>
-          <Grid>
-            <TextField label="Email" variant="outlined" name={"email"} onChange={inputChangeHandler}/>
-          </Grid>
-          <Grid>
-            <TextField label="Password" variant="outlined" name={"password"} onChange={inputChangeHandler}/>
-          </Grid>
-          <Grid>
-            <Button type={"submit"}>
+            <TextField label="Email" variant="outlined" name={"email"} onChange={inputChangeHandler} sx={{
+              width: '100%',
+            }}/>
+            <TextField label="Password" variant="outlined" name={"password"} onChange={inputChangeHandler} sx={{
+              width: '100%',
+            }}/>
+            <Button type={"submit"} variant={"contained"} sx={{
+              width: '100%',
+            }}>
               Save
             </Button>
-          </Grid>
         </Grid>
       </Grid>
     </>

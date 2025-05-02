@@ -31,12 +31,13 @@ const Login = ()=>{
     <>
       <Grid>
         <Container maxWidth={'lg'}>
-          <Grid>
+          <Grid sx={{
+            width: '300px',
+          }}>
             <Typography variant={"h1"}>
               Login
-              {user?.username}
             </Typography>
-            <LoginForm onSubmit={onSubmit} state={state} setState={setState} type={"login"}></LoginForm>
+            <LoginForm onSubmit={onSubmit} state={state} setState={setState}></LoginForm>
             <Link href={"/register"}>register</Link>
           </Grid>
         </Container>
